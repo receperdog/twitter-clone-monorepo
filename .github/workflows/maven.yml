@@ -26,8 +26,8 @@ jobs:
     - name: Build ${{ matrix.service }} with Maven
       run: mvn -B package --file ${{ matrix.service }}/pom.xml
       
-    - name: Run tests for ${{ matrix.service }}
-      run: mvn -B test --file ${{ matrix.service }}/pom.xml
+    #- name: Run tests for ${{ matrix.service }}
+    #  run: mvn -B test --file ${{ matrix.service }}/pom.xml
 
   dependency-submission:
     runs-on: ubuntu-latest
